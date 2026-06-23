@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: mall-queen-web-mobile
+    runtime: static
+    branch: main
+    buildCommand: echo "Static Cocos build already committed"
+    staticPublishPath: .
