@@ -36,27 +36,8 @@
 
   <link rel="stylesheet" type="text/css" href="style.02f4a.css"/>
 
-  <style>
-    #rotate-tip { display: none; }
-    @media screen and (orientation: portrait) {
-      #GameDiv { visibility: hidden; }
-      #rotate-tip {
-        display: flex; position: fixed; inset: 0; z-index: 99999;
-        flex-direction: column; align-items: center; justify-content: center;
-        background: #f7ede0; color: #c8643c; padding: 24px; box-sizing: border-box;
-        font-family: Helvetica, Arial, "PingFang SC", sans-serif; text-align: center;
-      }
-      #rotate-tip .icon { font-size: 60px; margin-bottom: 18px; animation: rothint 1.8s ease-in-out infinite; }
-      #rotate-tip .txt { font-size: 19px; font-weight: 700; line-height: 1.7; }
-      @keyframes rothint { 0%,55%{ transform: rotate(0); } 80%,100%{ transform: rotate(90deg); } }
-    }
-  </style>
 </head>
 <body>
-  <div id="rotate-tip">
-    <div class="icon">📱</div>
-    <div class="txt">请将手机横屏<br>以获得最佳游玩体验</div>
-  </div>
   <div id="GameDiv" cc_exact_fit_screen="true">
       <div id="Cocos3dGameContainer">
         <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas>
@@ -76,7 +57,7 @@
 <script src="src/import-map.4e643.json" type="systemjs-importmap" charset="utf-8"> </script>
 
 <script>
-    System.import('./index.594cb.js').catch(function(err) { console.error(err); })
+    System.import('./index.4926e.js').catch(function(err) { console.error(err); })
 </script>
 
 </body>
